@@ -10,11 +10,11 @@ const Input = ({
   error?: string;
 } & InputHTMLAttributes<HTMLInputElement>) => {
   return (
-    <div className={"relative"}>
+    <div className={"relative w-full"}>
       <input
         {...props}
         className={clsx(
-          "rounded-[2px] px-[16px] py-[12px] outline outline-outline outline-[1px] focus:outline-primary text-primary focus:outline placeholder:text-disabledText",
+          "rounded-[2px] px-[16px] py-[12px] outline outline-outline outline-[1px] focus:outline-primary text-primary focus:outline placeholder:text-disabledText w-full",
           error &&
             "!outline-error !outline-[1px] !text-error placeholder:text-error focus:outline-error",
           className,

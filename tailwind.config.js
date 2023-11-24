@@ -2,6 +2,9 @@
 export default {
   content: ["./src/**/*.{html,js,tsx,jsx,ts}"],
   theme: {
+    fontFamily: {
+      caveat: "Caveat",
+    },
     extend: {
       colors: {
         primary: "#3D3D3D",
