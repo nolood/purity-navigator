@@ -13,6 +13,8 @@ export default {
         outline: "rgba(0, 0, 0, 0.16)",
         muted: "#F0F0F0",
         default: "#E6E6E6",
+        error: "#F00",
+        gray: "#757575",
       },
     },
   },
