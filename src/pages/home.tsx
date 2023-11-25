@@ -1,14 +1,13 @@
-import Navbar from "@/widgets/navbar/ui/navbar.tsx";
 import Intro from "@/widgets/intro/ui/intro.tsx";
 import Statistics from "@/widgets/statistics/ui/statistics.tsx";
+import BaseLayout from "@/app/layouts/base-layout/ui/base-layout.tsx";
 
 const HomePage = () => {
   return (
-    <div className={"flex flex-col gap-[100px]"}>
-      <Navbar />
+    <BaseLayout>
       <Intro />
       <Statistics />
-    </div>
+    </BaseLayout>
   );
 };
 

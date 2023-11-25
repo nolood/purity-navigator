@@ -1,6 +1,8 @@
 import { INFO } from "@/shared/lib/info.ts";
 import { NavbarItems } from "@/widgets/navbar/lib/navbar-items.ts";
 import { Button } from "@/shared/ui";
+import { router } from "@/shared/router/router.tsx";
+import { INVOCATION_ROUTE } from "@/shared/router/paths.tsx";
 
 const Navbar = () => {
   return (
@@ -15,14 +17,16 @@ const Navbar = () => {
           <ul className={"flex gap-[40px]"}>
             {NavbarItems.map((item) => (
               <li key={item.path} className={"text-gray"}>
-                <a className={"text-primary"} href={item.path}>
+                <a className={"text-textPrimary"} href={item.path}>
                   {item.title}
                 </a>
               </li>
             ))}
           </ul>
           <div className={"flex gap-[12px]"}>
-            <Button>Сообщить о проблеме</Button>
+            <Button onClick={() => router.navigate(INVOCATION_ROUTE)}>
+              Направить обращение
+            </Button>
             <Button variant={"secondary"}>Личный кабинет</Button>
           </div>
         </nav>

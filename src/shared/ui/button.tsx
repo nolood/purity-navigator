@@ -25,7 +25,7 @@ const Button = ({
         "rounded-[8px] px-[20px] py-[12px] outline-offset-0 border-none",
         variant === "primary"
           ? "bg-primary text-white hover:bg-secondary active:bg-selected"
-          : "bg-white text-primary outline outline-outline outline-[1px] hover:bg-muted active:bg-default",
+          : "bg-white text-textPrimary outline outline-outline outline-[1px] hover:bg-muted active:bg-default",
         variant === "secondary" && disabled && disabledSecondary,
         variant === "primary" && disabled && disabledPrimary,
         className,

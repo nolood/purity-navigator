@@ -18,6 +18,8 @@ export default {
         default: "#E6E6E6",
         error: "#F00",
         gray: "#757575",
+        textPrimary: "#3D3D3D",
+        textSecondary: "#757575",
       },
     },
   },

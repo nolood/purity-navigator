@@ -13,7 +13,7 @@ export const NavbarItems = [
   },
   {
     title: "Карта",
-    path: "#map",
+    path: "#form-map",
   },
   {
     title: "Портал",
